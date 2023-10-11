@@ -1,3 +1,4 @@
+
 document.addEventListener("click" , (e) =>{
     const {target} = e;
 
@@ -54,11 +55,23 @@ const urlLocationHandler = async() =>{
         location = "/";
 
     }
-    const route = urlRoutes[location]|| urlRoutes(404);
+    const route = urlRoutes[location]|| urlRoutes[404];
     const html = await fetch(route.template).then((response) => response.text());
     document.getElementById("content").innerHTML = html;
 
 
+
+}
+
+
+
+
+
+// new code
+
+function bgchanger(){
+    let element = document.getElementById("mainpage");
+    element.style.backgroundImage = "url('/resources/backgrounds/bg2.jpg')";
 
 }
 
