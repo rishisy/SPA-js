@@ -1,6 +1,6 @@
 body {
     /* Location of the image */
-    background-image: url(/resources/backgrounds/bg1.jpg);
+    background-image: url(/resources/backgrounds/bg-default.jpg);
     
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
