@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/terminal/terminal.css">
     
     <title>Linux</title>
   </head>
@@ -14,12 +15,9 @@
 
     <div class="cointainer-fluid">
 
-
-
-
         <!--Navbar-------------------------------------------------------------------->
         <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">APPS</a>
+            <a class="navbar-brand" href="#"><img  height="60px" src="https://img.icons8.com/external-those-icons-flat-those-icons/96/external-Linux-logos-and-brands-those-icons-flat-those-icons.png" alt="external-Linux-logos-and-brands-those-icons-flat-those-icons"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,25 +25,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Chrome </a>
+                  <a class="nav-link" href="#"><img height="60px" src="https://img.icons8.com/color/96/chrome--v1.png" alt="chrome--v1"/> </a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Calculator</a>
+                  <a class="nav-link" href="#"><img height="60px" src="https://img.icons8.com/officel/80/calculator.png" alt="calculator"/></a>
                 </li>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Notes</a>
+                  <a class="nav-link" href="#"><img height="60" src="https://img.icons8.com/officel/80/making-notes.png" alt="making-notes"/></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Terminal
-                  </a>
-                  <div class="dropup"> 
-                  <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Window 1</a>
-                    <a class="dropdown-item" href="#">Window 2</a>
-                  </div>
-                </div>
+                  <a   href="javascript:void(0);" onclick="createAppWindow('Terminal')"  class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+                    <img  height="60" src="https://img.icons8.com/officel/80/console.png" alt="console"/>                  </a>
+
                 </li>
 
               </ul>
@@ -55,14 +47,7 @@
         <!--Navbar END-------------------------------------------------------------->
 
 
-
     <button onclick="bgchanger()">CLICK ME</button>
-
-
-
-
-
-
 
 
     <div id="main">
@@ -74,22 +59,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="/js/url-router.js"></script>
+    <script src="/terminal/terminal.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

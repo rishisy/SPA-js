@@ -5,7 +5,7 @@ body {
 
 .app-window {
     border-radius: 0.5rem;
-    width: 400px;
+    width: 450px;
     height: 300px;
     position: absolute;
     border: 1px solid #171717;
@@ -38,8 +38,23 @@ body {
     flex: 1;
     padding: 10px;
     overflow: auto;
+    color: #fff;
 }
 .title{
     display: table;
     margin: 0 auto;
+}
+
+
+.input {
+    color: #fff;
+    background: #313131;
+    border: none;
+    padding: 5px;
+}
+
+.output {
+    padding: 5px;
+    margin-top: 5px;
+    white-space: pre-line; /* This property ensures text wraps onto new lines */
 }
