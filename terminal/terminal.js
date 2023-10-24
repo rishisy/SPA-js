@@ -41,11 +41,30 @@ function createAppWindow(title) {
     input.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             const command = input.value;
-            output.textContent += `$ ${command}\n`;
+            const commandarr = command.split(" ");
+            const parentCommand = commandarr[0];
 
-            // Add your command execution logic here
-            // For simplicity, we'll just echo the command back as a response
-            output.textContent += `Response: ${command}\n`;
+
+
+
+            switch(parentCommand){
+
+                case "clear":
+                    document.getElementsByClassName("output")[0].innerHTML = "";
+                    output.textContent += "Screen Cleared \n";
+                    break;
+                
+                case "touch":
+                    output.textContent += ` ${commandarr} created \n`;
+
+
+                default:
+                    output.textContent += `$ ${command}\n`;
+                    output.textContent += `Response: ${command}\n`;
+                    
+
+            }
+            // resetting the input value to default 
 
             input.value = '';
         }
