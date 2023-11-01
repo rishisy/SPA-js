@@ -44,9 +44,6 @@ function createAppWindow(title) {
             const commandarr = command.split(" ");
             const parentCommand = commandarr[0];
 
-
-
-
             switch(parentCommand){
 
                 case "clear":

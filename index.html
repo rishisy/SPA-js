@@ -4,44 +4,63 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/terminal/terminal.css">
+    
+    <title>Linux</title>
   </head>
-  <body>
+  <body id = "mainpage">
 
-    <div class="cointainer">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand text-success" href="/">SPA - JS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <div class="cointainer-fluid">
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Us</a>
-                  </li>
-                </ul> 
-              </div>
+        <!--Navbar-------------------------------------------------------------------->
+        <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img  height="60px" src="https://img.icons8.com/external-those-icons-flat-those-icons/96/external-Linux-logos-and-brands-those-icons-flat-those-icons.png" alt="external-Linux-logos-and-brands-those-icons-flat-those-icons"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><img height="60px" src="https://img.icons8.com/color/96/chrome--v1.png" alt="chrome--v1"/> </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><img height="60px" src="https://img.icons8.com/officel/80/calculator.png" alt="calculator"/></a>
+                </li>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><img height="60" src="https://img.icons8.com/officel/80/making-notes.png" alt="making-notes"/></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a   href="javascript:void(0);" onclick="createAppWindow('Terminal')"  class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+                    <img  height="60" src="https://img.icons8.com/officel/80/console.png" alt="console"/>                  </a>
+
+                </li>
+
+              </ul>
+
             </div>
           </nav>
+        <!--Navbar END-------------------------------------------------------------->
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/pyTHNeRAFwo?si=yPsfO_pReQWc41Pa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="main">
-            <div id="content"></div>
-        </div>
+
+    <button onclick="bgchanger()">CLICK ME</button>
+
+
+    <div id="main">
+        <div id="content"></div>
     </div>
+
+
+    </div>
+
+
+
     <script src="/js/url-router.js"></script>
+    <script src="/terminal/terminal.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
