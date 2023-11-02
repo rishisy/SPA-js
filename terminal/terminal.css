@@ -58,3 +58,16 @@ body {
     margin-top: 5px;
     white-space: pre-line; /* This property ensures text wraps onto new lines */
 }
+
+
+
+
+#add-note{
+    color: #fff;
+    background: #313131;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+
+}
