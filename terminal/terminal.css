@@ -71,3 +71,26 @@ body {
     align-items: center;
 
 }
+
+#append-note{
+    color: #fff;
+    background: #121010;
+    border: 1px whitesmoke solid   ;
+    border-radius:  6px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+
+}
+
+/* Add this CSS in your stylesheet */
+.news-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    text-align: center; /* To center the image within its container */
+}
+
+/* Your existing CSS styles for app-window, title-bar, etc. */
