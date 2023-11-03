@@ -31,3 +31,7 @@ To set up Single Page Linux on your local machine, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/single-page-linux.git
+2. Run the Live Server / Open index.html:
+
+   ```bash
+   open index.html
